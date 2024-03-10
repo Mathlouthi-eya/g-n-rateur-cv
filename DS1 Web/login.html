@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h3 {
+            color: #3109e0;
+            text-shadow: #131212;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        form {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #131212;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(34, 3, 212, 0.911);
+            height: 360px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            border: none;
+            background-color: #636262;
+            color: #3a3737;
+        }
+
+        button {
+            background-color: #0818a8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4709f1;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Bienvenue dans notre site </h1>
+    </div>
+    <div>
+        <p>
+            Créer votre CV professionnel moderne 
+        </p>
+    </div>
+    <form action="login.php" method="POST">
+
+        <h3>Inscrivez-vous</h3>
+        <label for="nom">Nom et Prénom:</label>
+        <input id="nom" type="text" placeholder="saisir votre nom et prénom" required><br><br>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="exemple@gmail.com" required><br><br>
+        <label for="password">Mot de pass:</label>
+
+        <input id="password" type="password" placeholder="saisir votre mot de passe" maxlength="8"
+            minlength="8"><br><br>
+
+        <a href="form.html" target="_blank"><button type="submit">S'incrir</button></a>
+
+    </form>
+</body>
+
+</html>
